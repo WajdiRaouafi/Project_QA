@@ -1,0 +1,10 @@
+{{ form_start(form) }}
+    {{ form_row(form.date_debut) }}
+    {{ form_row(form.date_retour) }}
+    {{ form_row(form.prix) }}
+    {{ form_row(form.voiture) }}  <!-- This renders the dropdown for selecting a voiture -->
+    {{ form_row(form.client) }}    <!-- Assuming client is an entity -->
+    <button type="submit" class="btn btn-primary">
+        {{ button_label|default('Create') }}
+    </button>
+{{ form_end(form) }}
